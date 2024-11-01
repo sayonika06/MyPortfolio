@@ -1,0 +1,43 @@
+
+
+.flex-container {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background: pink;
+    
+  }
+  
+  .content-container {
+    height: 180px;
+    background: #0066ff;
+    width: 100%;
+    margin: 10px 0;
+  
+  }
+  
+  .column {
+    padding: 0 10px;
+    box-sizing: border-box;
+    flex: 25%;
+    max-width: 25%;
+  }
+  
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
+  
