@@ -101,3 +101,27 @@
     text-align: justify;
   }
 }
+
+
+
+/* addon */
+
+@media screen and (max-width: 825px)
+{
+  #contact {
+    
+    padding-top: 4vh;
+
+    /* height: 126vh; */
+    margin: 0 2rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    background: rgb(54, 82, 208);
+    width: 90vw;
+  } 
+
+  .contact-info-upper-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

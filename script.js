@@ -39,3 +39,46 @@ function type() {
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, typingSpeed);
 });
+
+
+  const toggleButton = document.getElementById('dark-mode-toggle');
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Save preference to local storage
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+  });
+
+
+
+  const toggleSwitch = document.getElementById('dark-mode-toggle');
+  toggleSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode', toggleSwitch.checked);
+
+    // Save preference to local storage
+    if (toggleSwitch.checked) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+  // Check for saved preference on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+      toggleSwitch.checked = true;
+    }
+  });
+
+
