@@ -23,6 +23,8 @@ body {
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 html::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Opera */
@@ -50,6 +52,11 @@ header {
   backdrop-filter: blur(10px);
   box-shadow: 0 1px 40px #5f5f5f39;
   z-index: 1000;
+}
+
+.hamburger-menu 
+{
+  display: none;
 }
 
 .logo {
@@ -350,6 +357,14 @@ p {
     width: 200px;
     margin-top: 20px;
   }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
 }
 
 /* Project Showcase Section */
@@ -380,6 +395,19 @@ p {
 .project-details {
   max-width: 45%;
 }
+
+/* .project-details {
+  order: 2; /* Makes the text and button appear after the image */
+/* }
+.project-images {
+  order: 1; Makes the image appear first 
+} */
+
+
+
+
+
+
 
 .project-details h3 {
   font-size: 1.5rem;
@@ -654,10 +682,11 @@ a {
 }
 
 /* General Mobile Styles */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   body {
-    padding: 0 10px;
+    /* padding: 0 10px; */
     overflow-x: hidden;
+    
   }
 
   header {
@@ -754,6 +783,9 @@ a {
     flex-direction: column;
     padding: 20px;
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .project-details {
@@ -822,127 +854,18 @@ a {
 }
 
 /* Additional Styles for Small Screens (Max Width 480px) */
-@media (max-width: 480px) {
-  header {
-    /* padding: 10px; */
-    width: 95vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .hamburger-menu {
-    /* display: none; */
-    position: fixed;
-    top: 15px;
-    right: 90px;
-    width: fit-content;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-    background-color: #000000;
-  }
-
-  .logo span {
-    padding-top: 10px;
-    font-size: 1.4rem;
-  }
-
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .cta-buttons {
-    gap: 8px;
-  }
-
-  .btn {
-    padding: 10px;
-  }
-
-  .stats-container {
-    gap: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .stat h2 {
-    font-size: 1rem;
-  }
-
-  .stat p {
-    font-size: 0.8rem;
-  }
-
-  .project-details h2 {
-    font-size: 1.5rem;
-  }
-
-  .project-details p {
-    font-size: 0.9rem;
-  }
-
-  .contact-container {
-    padding: 10px;
-  }
-
-  input,
-  textarea {
-    padding: 10px;
-  }
-
-  .primary-btn {
-    font-size: 0.8rem;
-  }
-
-  .footer-nav a {
-    font-size: 0.9rem;
-  }
-
-  .social-links i {
-    font-size: 1.2rem;
-  }
-
-  /* #website-designs {
-    width: 95vw;
-    text-align: center;
-    padding-left: 0px;
-  } */
-
-  .more-projects {
-    width: 9vw;
-    text-align: center;
-    padding-left: 0px;
-  }
-
-  canvas {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    z-index: 100;
-    pointer-events: none;
-  }
-  #selected-works img {
-    margin-left: 0px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
   /* Header */
   header {
-    flex-direction: column;
     width: 95vw;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
   }
 
   .logo {
@@ -965,13 +888,14 @@ a {
 
   .hamburger-menu {
     position: fixed;
-    display: block;
+    display: flex;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #ff6bcb;
     z-index: 1000;
-    right: 90px;
-    width: fit-content;
+    right: 50px;
+    top: 30px;
+
   }
 
   nav.open {
@@ -1035,6 +959,8 @@ a {
     position: relative;
     width: 150px;
     margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 80px;
   }
 
   /* Project Showcase */
@@ -1090,22 +1016,22 @@ a {
 }
 
 /* Hamburger Menu Styles */
-.hamburger-menu {
+/* .hamburger-menu {
   display: none;
   position: fixed;
   top: 13px;
   right: 0px;
-  /* width: 50%; */
+  /* width: 50%; 
   right: 90px;
   width: fit-content;
-}
+} */
 
 /* Show Hamburger Menu on Mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hamburger-menu {
-    display: block;
+    display: flex;
     position: fixed;
     right: 90px;
     width: fit-content;
   }
-}
+} */
