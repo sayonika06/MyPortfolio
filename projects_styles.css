@@ -1,0 +1,201 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1d1e22;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 40px #5f5f5f39; 
+    z-index: 1000;
+    margin-bottom: 50px;
+    top: 0px;
+    text-decoration: none;
+    color: #ff6bcb;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 40px;
+  }
+  
+  .logo span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff6bcb;
+    text-decoration: none;
+  }
+  .logo a{
+    text-decoration: none;
+    color: #ff6bcb;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li {
+    height: 30px;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 5px;
+  }
+  
+  nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff6bcb;
+    transition: width 0.3s;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+
+/* Website Designs Section *
+
+
+/* Website Designs Section */
+#website-designs {
+    margin-top: 90px;
+    text-align: center;
+}
+
+#website-designs h2 {
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.projects-g {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+    flex: 0 0 calc(30% - 20px); /* Takes 50% width minus gap for 2 projects per row */
+    max-width: 500px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        flex: 0 0 100%; /* Full width for mobile screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Designs */
+#section-designs {
+    padding: 50px;
+}
+
+.sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.section-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Collaboration CTA */
+#collaborate {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #ff6bcb, #1f93ff);
+    color: #ffffff;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #1f93ff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
