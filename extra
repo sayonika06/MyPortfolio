@@ -1,4 +1,11 @@
 @media (max-width: 480px) {
+
+
+  /* #selected-works {
+    flex-direction: column-reverse;
+    padding: 20px;
+} */
+
   header {
     /* padding: 10px; */
     width: 95vw;

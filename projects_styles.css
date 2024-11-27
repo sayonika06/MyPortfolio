@@ -121,6 +121,10 @@ header {
     .project-card {
         flex: 0 0 100%; /* Full width for mobile screens */
     }
+    #website-designs h2 {
+      margin-bottom: 50px;
+      margin-left: 0px;
+  }
 }
 
 
