@@ -880,7 +880,7 @@ a {
 
   /* Header */
   header {
-    width: 95vw;
+    width: 100vw;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -898,7 +898,7 @@ a {
     flex-direction: column;
     gap: 10px;
     background: rgb(0, 0, 0);
-    padding: 20px;
+    /* padding: 20px; */
     position: fixed;
     top: 70px;
     left: 0;
@@ -925,9 +925,14 @@ a {
 
   nav ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
     text-align: center;
     background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vh; */
+    padding-bottom: 20px;
   }
 
   nav a {
